@@ -52,6 +52,7 @@ export const OutputTable = () => {
 
   return (
     <div className={styles.container}>
+      {/* TODO タブの横幅レスポンシブ対応 */}
       <Tabs defaultValue="first" className={styles.tabs}>
         <Tabs.List grow justify="center">
           <Tabs.Tab value="first">すべて</Tabs.Tab>
