@@ -7,11 +7,15 @@
     "build",
     "coverage"
   ],
-  "dictionaries": ["typescript", "html"],
+  "dictionaries": [
+    "typescript",
+    "html"
+  ],
   "dictionaryDefinitions": [],
   "words": [
-    "lefthook",
     "biome",
-    "tsx"
+    "lefthook",
+    "tsx",
+    "Zenn"
   ]
 }
