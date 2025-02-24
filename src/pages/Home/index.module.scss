@@ -1,0 +1,84 @@
+.container{
+
+  .baseContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .baseBoxShadow{
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  }
+  
+  .mokkun{
+    // TODO 後で消す
+    background-color: aliceblue;
+
+    @extend .baseContainer;
+    height: 100vh;
+
+    .icon{
+      width: 150px;
+      height: 150px;
+      border-radius: 999px;
+      @extend .baseBoxShadow;
+    }
+
+    .description{
+      margin-left: 20px;
+
+      .name{
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .hello{
+        font-size: 24px;
+        // TODO 後でcss variables設定
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  .about{
+    @extend .baseContainer;
+    flex-direction: column;
+    padding: 24px;
+    padding-top: 0;
+
+    .textContainer{
+      text-align: left;
+
+      .subTitle{
+        font-weight: bold;
+        font-size: 32px;
+
+        &:not(:first-child){
+          margin-top: 16px;
+        }
+      }
+    }
+    .text {
+      font-size: 16px;
+    }
+  
+    .list {
+      @extend .text;
+      margin-left: 16px;
+    }
+  }
+
+  .works{
+    @extend .baseContainer;
+    flex-direction: column;
+    padding: 24px;
+    padding-top: 0;
+  }
+
+  .outputs{
+    @extend .baseContainer;
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,23 @@
+.container {
+  width: 80%;
+
+  .tabs{
+    margin-bottom: 12px;
+  }
+
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+  
+    .link{
+      color: var(--text-link);
+    }
+
+    .linkIcon{
+      margin-right: 4px;
+    }
+  }
+
+}

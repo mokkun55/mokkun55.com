@@ -1,21 +1,8 @@
 {
   "version": "0.2",
   "language": "en",
-  "ignorePaths": [
-    "node_modules",
-    "dist",
-    "build",
-    "coverage"
-  ],
-  "dictionaries": [
-    "typescript",
-    "html"
-  ],
+  "ignorePaths": ["node_modules", "dist", "build", "coverage"],
+  "dictionaries": ["typescript", "html"],
   "dictionaryDefinitions": [],
-  "words": [
-    "biome",
-    "lefthook",
-    "tsx",
-    "Zenn"
-  ]
+  "words": ["biome", "lefthook", "tsx", "Zenn", "mokkun"]
 }
