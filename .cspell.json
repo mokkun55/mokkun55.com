@@ -1,0 +1,17 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage"
+  ],
+  "dictionaries": ["typescript", "html"],
+  "dictionaryDefinitions": [],
+  "words": [
+    "lefthook",
+    "biome",
+    "tsx"
+  ]
+}
