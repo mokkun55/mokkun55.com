@@ -6,6 +6,7 @@ import { FaLink } from 'react-icons/fa6'
 import dayjs from 'dayjs'
 import { Table, Tabs } from '@mantine/core'
 import type React from 'react'
+import { Link } from 'react-router'
 
 export const OutputTable = () => {
   // TODO 今はモック
@@ -38,8 +39,10 @@ export const OutputTable = () => {
     return (
       <Table.Tr key={output.id}>
         <Table.Td>{typeIcon}</Table.Td>
-        <Table.Td>{output.title}</Table.Td>
-        <Table.Td>
+        <Table.Td className={styles.title}>
+          <Link to={output.url}>{output.title}</Link>
+        </Table.Td>
+        <Table.Td className={styles.hiddenSp}>
           <FaLink className={styles.linkIcon} />
           <a href={output.url} className={styles.link}>
             {output.url}
