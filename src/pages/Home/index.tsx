@@ -11,6 +11,7 @@ import { SimpleGrid } from '@mantine/core'
 import type { WorkType } from '@/types/WorkType'
 import { Work } from './components/Work'
 import { OutputTable } from './components/OutputTable'
+import { Contact } from './components/Contact'
 
 export const Home = () => {
   // TODO 後で消す 作品一覧 モックデータ
@@ -222,6 +223,10 @@ export const Home = () => {
       </div>
 
       {/* 連絡先 */}
+      <div className={styles.contact}>
+        <SectionTitle title="CONTACT" />
+        <Contact />
+      </div>
     </div>
   )
 }
