@@ -13,6 +13,8 @@ import { Work } from './components/Work'
 import { OutputTable } from './components/OutputTable'
 import { Contact } from './components/Contact'
 import { LinkButton } from '@/components/Button/LinkButton'
+import { AnimatedArrow } from '@/components/AnimatedArrow'
+import { AnimatedCircles } from '@/components/AnimatedCircles'
 
 export const Home = () => {
   // TODO 後で消す 作品一覧 モックデータ
@@ -171,6 +173,10 @@ export const Home = () => {
           <p className={styles.name}>mokkun</p>
           <p className={styles.hello}>Hello, World!</p>
         </div>
+
+        <AnimatedArrow />
+
+        <AnimatedCircles />
       </div>
 
       {/* 自己紹介文 */}
