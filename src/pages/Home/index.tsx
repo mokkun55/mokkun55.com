@@ -12,6 +12,7 @@ import type { WorkType } from '@/types/WorkType'
 import { Work } from './components/Work'
 import { OutputTable } from './components/OutputTable'
 import { Contact } from './components/Contact'
+import { LinkButton } from '@/components/Button/LinkButton'
 
 export const Home = () => {
   // TODO 後で消す 作品一覧 モックデータ
@@ -214,12 +215,16 @@ export const Home = () => {
             </div>
           ))}
         </SimpleGrid>
+        {/* TODO もっと見るリンク */}
+        <LinkButton label="もっと見る" url="/todo" />
       </div>
 
       {/* スライド / 技術記事 */}
       <div className={styles.outputs}>
         <SectionTitle title="OUTPUTS" />
         <OutputTable />
+        {/* TODO もっと見るリンク */}
+        <LinkButton label="もっと見る" url="/todo" />
       </div>
 
       {/* 連絡先 */}
