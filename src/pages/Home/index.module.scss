@@ -1,5 +1,9 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
 
+.container{
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   .baseContainer{
     display: flex;
     justify-content: center;
@@ -12,9 +16,6 @@
   }
   
   .mokkun{
-    // TODO 後で消す
-    background-color: aliceblue;
-
     @extend .baseContainer;
     height: 100vh;
 
@@ -35,7 +36,6 @@
 
       .hello{
         font-size: 24px;
-        // TODO 後でcss variables設定
         color: var(--text-secondary);
       }
     }
@@ -43,16 +43,33 @@
 
   .about{
     @extend .baseContainer;
+    
     flex-direction: column;
-    padding: 24px;
+    padding: 24px 12px;
     padding-top: 0;
 
+    background: linear-gradient(
+      270deg,
+      var(--gradientColor1),
+      var(--gradientColor2)
+    );
+    background-size: 200%;
+    animation: backgroundGradient 20s ease infinite;
+
     .textContainer{
+      width: 100%;
+      max-width: 1000px;
+      background-color: rgba(255, 255, 255, 0.355);
+      border-radius: 16px;
+      padding: 24px;
+      border: #fff 1px solid;
+
       text-align: left;
 
       .subTitle{
-        font-weight: bold;
-        font-size: 32px;
+        font-weight: 800;
+        font-size: 24px;
+        margin-bottom: 4px;
 
         &:not(:first-child){
           margin-top: 16px;
@@ -61,6 +78,7 @@
     }
     .text {
       font-size: 16px;
+      line-height: 1.35;
     }
   
     .list {
@@ -81,4 +99,17 @@
     flex-direction: column;
   }
 
+}
+
+// アニメーション
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

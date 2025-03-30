@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { BaseProvider } from '@/providers/baseProvider'
 import { Router } from '@/router/Route'
 import '@/reset.css'
-import '@/index.css'
 import '@/variables.css'
 
 const rootElement = document.getElementById('root')

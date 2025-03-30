@@ -3,4 +3,10 @@
   --text-primary: #000;
   --text-secondary: #aaa;
   --text-link: #0000ff;
+
+  /* 背景 */
+  --gradientColor1: #1fa2ff;
+  --gradientColor2: #a1ffcb;
+  --animeBoxColor: rgba(59, 219, 255, 0.355);
+  --glassBackgroundColor: rgba(255, 255, 255, 0.355);
 }
